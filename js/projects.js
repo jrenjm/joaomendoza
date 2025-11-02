@@ -7,7 +7,7 @@ const projects = [
         id: 1,
         title: "Gestión de Inventario y Asignación de EPPs",
         problem: "El control manual de EPPs generaba pérdida de equipos, entregas sin registro y dificultad para rastrear el historial de asignaciones por trabajador",
-        description: "Sistema integral para gestionar el inventario completo de Equipos de Protección Personal y controlar su asignación al personal. Incluye registro de entradas/salidas, alertas de stock mínimo, historial por trabajador y generación automática de actas de entrega con firma digital.",
+        description: "Aplicación que desarrollé para gestionar el inventario completo de Equipos de Protección Personal y controlar su asignación al personal. Implementé registro de entradas/salidas, alertas de stock mínimo, historial por trabajador y generación automática de actas de entrega con firma digital.",
         technologies: ["Power Apps", "SharePoint", "Power Automate"],
         impact: "100% trazabilidad en entrega de EPPs",
         videoUrl: "assets/videos/proyecto1.mp4",
@@ -34,7 +34,7 @@ const projects = [
         id: 2,
         title: "Seguimiento y Control de Extintores",
         problem: "La inspección manual de extintores en múltiples proyectos causaba vencimientos no detectados y falta de visibilidad del estado general del parque de extintores",
-        description: "Aplicación para el monitoreo continuo de extintores en todos los proyectos. Permite registrar inspecciones, controlar fechas de vencimiento y recarga, y generar reportes consolidados del estado de todos los extintores de forma automática.",
+        description: "Aplicación que creé para el monitoreo continuo de extintores en todos los proyectos. Implementé funcionalidades para registrar inspecciones, controlar fechas de vencimiento y recarga, y generar reportes consolidados del estado de todos los extintores de forma automática.",
         technologies: ["Power Apps", "SharePoint", "Power BI"],
         impact: "0 extintores vencidos sin reemplazo",
         videoUrl: "assets/videos/proyecto2.mp4",
@@ -61,7 +61,7 @@ const projects = [
         id: 3,
         title: "Gestión Integral de Botiquines",
         problem: "El descontrol en el inventario de botiquines provocaba desabastecimiento en proyectos, vencimiento de medicamentos y dificultad para saber qué botiquín necesitaba reposición",
-        description: "Sistema completo para gestionar botiquines en múltiples proyectos. Controla la entrada de materiales al inventario central, permite la asignación específica de materiales a cada botiquín de proyecto y genera alertas de vencimiento y stock bajo.",
+        description: "Solución que desarrollé para gestionar botiquines en múltiples proyectos. El sistema controla la entrada de materiales al inventario central, permite la asignación específica de materiales a cada botiquín de proyecto y genera alertas de vencimiento y stock bajo.",
         technologies: ["Power Apps", "SharePoint", "Power Automate"],
         impact: "100% de botiquines abastecidos",
         videoUrl: "assets/videos/proyecto3.mp4",
@@ -89,7 +89,7 @@ const projects = [
         id: 4,
         title: "Checklists Digitales de Seguridad",
         problem: "Los checklists en papel se perdían, no tenían firma verificable y era imposible analizar tendencias o puntos críticos recurrentes en las inspecciones",
-        description: "Aplicación móvil de checklists digitales para diferentes tipos de trabajo de alto riesgo. Incluye checklists personalizados para EPP básico, trabajos en caliente y trabajos en altura. Permite registro fotográfico, firma digital y genera reportes automáticos.",
+        description: "App móvil que construí con checklists digitales para diferentes tipos de trabajo de alto riesgo. Integré checklists personalizados para EPP básico, trabajos en caliente y trabajos en altura, con registro fotográfico, firma digital y reportes automáticos.",
         technologies: ["Power Apps", "SharePoint", "Power Automate"],
         impact: "95% cumplimiento en inspecciones",
         videoUrl: "assets/videos/proyecto4.mp4",
@@ -221,7 +221,7 @@ function openProjectModal(projectId) {
             
             <div class="project-modal-section">
                 <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">
-                    <i class="fas fa-lightbulb"></i> Solución Implementada
+                    <i class="fas fa-lightbulb"></i> Solución que Desarrollé
                 </h3>
                 <p style="color: var(--text-secondary); line-height: 1.8;">${project.description}</p>
             </div>
@@ -242,7 +242,7 @@ function openProjectModal(projectId) {
             
             <div class="project-modal-section">
                 <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                    <i class="fas fa-trophy"></i> Resultados e Impacto
+                    <i class="fas fa-trophy"></i> Resultados Obtenidos
                 </h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
                     ${project.results.map(result => 
