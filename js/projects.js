@@ -126,7 +126,12 @@ function createProjectCard(project) {
         <div class="project-card" onclick="openProjectModal(${project.id})">
             <div class="project-thumbnail">
                 ${project.videoUrl && project.videoUrl.includes('.mp4') ? 
-                    `<video muted loop playsinline class="${project.videoOrientation === 'portrait' ? 'video-portrait' : 'video-landscape'}">
+                    `<video 
+                        muted 
+                        loop 
+                        playsinline 
+                        poster="${project.thumbnailUrl}"
+                        class="${project.videoOrientation === 'portrait' ? 'video-portrait' : 'video-landscape'}">
                         <source src="${project.videoUrl}" type="video/mp4">
                     </video>` :
                     `<img src="${project.thumbnailUrl}" alt="${project.title}">`
@@ -166,9 +171,12 @@ function renderProjects() {
         projectCards.forEach(card => {
             const video = card.querySelector('video');
             if (video) {
+                // Evento mouseenter: reproducir video
                 card.addEventListener('mouseenter', () => {
-                    video.play();
+                    video.play().catch(err => console.log('Error al reproducir:', err));
                 });
+                
+                // Evento mouseleave: pausar y volver al inicio
                 card.addEventListener('mouseleave', () => {
                     video.pause();
                     video.currentTime = 0;
@@ -198,7 +206,10 @@ function openProjectModal(projectId) {
             
             <div class="project-modal-video ${videoClass}">
                 ${project.videoUrl && project.videoUrl.includes('.mp4') ? 
-                    `<video controls autoplay>
+                    `<video 
+                        controls 
+                        autoplay 
+                        poster="${project.thumbnailUrl}">
                         <source src="${project.videoUrl}" type="video/mp4">
                         Tu navegador no soporta el elemento de video.
                     </video>` :
