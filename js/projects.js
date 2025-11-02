@@ -35,7 +35,7 @@ const projects = [
         title: "Seguimiento y Control de Extintores",
         problem: "La inspección manual de extintores en múltiples proyectos causaba vencimientos no detectados y falta de visibilidad del estado general del parque de extintores",
         description: "Aplicación que creé para el monitoreo continuo de extintores en todos los proyectos. Implementé funcionalidades para registrar inspecciones, controlar fechas de vencimiento y recarga, y generar reportes consolidados del estado de todos los extintores de forma automática.",
-        technologies: ["Power Apps", "SharePoint", "Power BI"],
+        technologies: ["Power Apps", "SharePoint"],
         impact: "0 extintores vencidos sin reemplazo",
         videoUrl: "assets/videos/proyecto2.mp4",
         thumbnailUrl: "assets/images/proyecto2-thumb.jpg",
