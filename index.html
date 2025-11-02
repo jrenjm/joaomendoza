@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Joao Mendoza Arenas - Especialista en automatización de procesos de SST con Power Apps">
+    <meta name="author" content="Joao Mendoza Arenas">
+    <title>Joao Mendoza | Portfolio - Automatización SST</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-name">JM</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <span class="hero-greeting">Hola, soy</span>
+                    <h1 class="hero-title">Joao Mendoza Arenas</h1>
+                    <p class="hero-subtitle">Estudiante de Ingeniería en SST | Especialista en Automatización de Procesos</p>
+                    <p class="hero-description">
+                        Transformo procesos manuales en soluciones digitales automatizadas. 
+                        Ayudo a organizaciones a reducir riesgos y mejorar eficiencia mediante Power Apps y Power Automate.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> Ver Proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contactar
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Procesos Automatizados</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="200">0</span>
+                            <span class="stat-label">Horas Ahorradas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Organizaciones</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image slide-in-right">
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Joao Mendoza" class="profile-img">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#sobre-mi" class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Soy estudiante de Ingeniería de Seguridad y Salud en el Trabajo, apasionado por la 
+                        <strong>digitalización de procesos</strong> y la <strong>automatización</strong>.
+                    </p>
+                    <p>
+                        Mi objetivo es transformar la gestión tradicional de SST mediante soluciones tecnológicas 
+                        que optimicen tiempo, reduzcan errores y mejoren la toma de decisiones basada en datos.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Formación Académica</h4>
+                                <p>Ingeniería en Seguridad y Salud en el Trabajo</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Enfoque Técnico</h4>
+                                <p>Power Platform & Automatización de Procesos</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Visión</h4>
+                                <p>Digitalización de SST para empresas del futuro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-subtitle">Soluciones reales que optimizan procesos de SST</p>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Los proyectos se cargarán dinámicamente desde projects.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Power Platform</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Power Apps</span>
+                        <span class="skill-tag">Power Automate</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">SharePoint</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Automatización</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Flujos de Trabajo</span>
+                        <span class="skill-tag">Integraciones</span>
+                        <span class="skill-tag">APIs</span>
+                        <span class="skill-tag">RPA Básico</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>SST</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Gestión de Riesgos</span>
+                        <span class="skill-tag">Investigación</span>
+                        <span class="skill-tag">Normativa</span>
+                        <span class="skill-tag">Auditorías</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Análisis</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Excel Avanzado</span>
+                        <span class="skill-tag">Dashboards</span>
+                        <span class="skill-tag">KPIs</span>
+                        <span class="skill-tag">Reportes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Conectemos</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:joao.mendoza@ejemplo.com">joao.mendoza@ejemplo.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/joaomendoza" target="_blank">linkedin.com/in/joaomendoza</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/joaomendoza" target="_blank">github.com/joaomendoza</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <a href="https://linkedin.com/in/joaomendoza" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/joaomendoza" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:joao.mendoza@ejemplo.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Joao Mendoza Arenas. Diseñado con <i class="fas fa-heart"></i> para transformar la SST</p>
+        </div>
+    </footer>
+
+    <!-- Modal para proyectos -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
