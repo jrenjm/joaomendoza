@@ -1,144 +1,118 @@
 // ========================================
-// Base de datos de proyectos
+// Base de datos de proyectos - JOAO MENDOZA
 // ========================================
 
 const projects = [
     {
         id: 1,
-        title: "Sistema de Registro de Incidentes",
-        problem: "Eliminar el proceso manual de registro de incidentes en papel que generaba pérdidas y retrasos en la documentación",
-        description: "Aplicación móvil que permite registrar incidentes laborales en tiempo real desde cualquier ubicación. Incluye captura de fotos, geolocalización automática y notificaciones instantáneas al equipo de SST.",
+        title: "Gestión de Inventario y Asignación de EPPs",
+        problem: "El control manual de EPPs generaba pérdida de equipos, entregas sin registro y dificultad para rastrear el historial de asignaciones por trabajador",
+        description: "Sistema integral para gestionar el inventario completo de Equipos de Protección Personal y controlar su asignación al personal. Incluye registro de entradas/salidas, alertas de stock mínimo, historial por trabajador y generación automática de actas de entrega con firma digital.",
         technologies: ["Power Apps", "SharePoint", "Power Automate"],
-        impact: "Redujo tiempo de registro en 70%",
-        videoUrl: "assets/videos/proyecto1.mp4", // Reemplaza con tu video
-        thumbnailUrl: "assets/images/proyecto1-thumb.jpg", // Reemplaza con tu imagen
+        impact: "100% trazabilidad en entrega de EPPs",
+        videoUrl: "assets/videos/proyecto1.mp4",
+        thumbnailUrl: "assets/images/proyecto1-thumb.jpg",
+        videoOrientation: "landscape", // horizontal
         features: [
-            "Registro offline disponible",
-            "Notificaciones automáticas",
-            "Geolocalización GPS",
-            "Captura fotográfica integrada",
-            "Dashboard de métricas en tiempo real"
+            "Control de inventario en tiempo real",
+            "Registro de entrada y salida de EPPs",
+            "Asignación directa al personal desde la app",
+            "Alertas automáticas de stock mínimo",
+            "Historial completo por trabajador",
+            "Generación de actas de entrega con firma digital",
+            "Reportes de consumo por período"
         ],
         results: [
-            "70% reducción en tiempo de registro",
-            "100% de incidentes documentados",
-            "Eliminación total del papel",
-            "Respuesta 3x más rápida"
+            "100% de EPPs rastreables",
+            "0 pérdidas de equipos sin registro",
+            "70% reducción en tiempo de asignación",
+            "Cumplimiento normativo garantizado",
+            "Auditorías sin observaciones"
         ]
     },
     {
         id: 2,
-        title: "Inspecciones de Seguridad Digitales",
-        problem: "Las inspecciones en formularios físicos dificultaban el seguimiento y análisis de riesgos recurrentes",
-        description: "Sistema de inspecciones digitales con checklist personalizables por área. Genera reportes automáticos y envía alertas cuando se detectan condiciones críticas.",
-        technologies: ["Power Apps", "Power BI", "SharePoint"],
-        impact: "Aumentó inspecciones completadas en 85%",
+        title: "Seguimiento y Control de Extintores",
+        problem: "La inspección manual de extintores en múltiples proyectos causaba vencimientos no detectados y falta de visibilidad del estado general del parque de extintores",
+        description: "Aplicación para el monitoreo continuo de extintores en todos los proyectos. Permite registrar inspecciones, controlar fechas de vencimiento y recarga, y generar reportes consolidados del estado de todos los extintores de forma automática.",
+        technologies: ["Power Apps", "SharePoint", "Power BI"],
+        impact: "0 extintores vencidos sin reemplazo",
         videoUrl: "assets/videos/proyecto2.mp4",
         thumbnailUrl: "assets/images/proyecto2-thumb.jpg",
+        videoOrientation: "landscape",
         features: [
-            "Checklists personalizables por área",
-            "Fotografías con anotaciones",
-            "Priorización automática de riesgos",
-            "Reportes PDF automáticos",
-            "Análisis de tendencias con Power BI"
+            "Seguimiento individualizado por extintor",
+            "Registro de inspecciones por proyecto",
+            "Control de fechas de vencimiento y recarga",
+            "Alertas automáticas de vencimientos próximos",
+            "Dashboard con estado de todos los extintores",
+            "Reportes consolidados por proyecto",
+            "Geolocalización de extintores en obra"
         ],
         results: [
-            "85% más inspecciones completadas",
-            "60% reducción en riesgos críticos",
-            "Reportes generados en 2 minutos",
-            "100% trazabilidad de hallazgos"
+            "0 extintores vencidos",
+            "100% de inspecciones documentadas",
+            "85% reducción en tiempo de reportes",
+            "Visibilidad total del parque de extintores",
+            "Prevención proactiva de vencimientos"
         ]
     },
     {
         id: 3,
-        title: "Control de EPPs",
-        problem: "Pérdida de control sobre la entrega y estado de equipos de protección personal, generando incumplimientos normativos",
-        description: "Aplicación para gestionar el inventario, entrega y renovación de EPPs. Incluye alertas automáticas de vencimiento y firma digital del trabajador.",
-        technologies: ["Power Apps", "Power Automate", "OneDrive"],
-        impact: "100% cumplimiento normativo en EPPs",
+        title: "Gestión Integral de Botiquines",
+        problem: "El descontrol en el inventario de botiquines provocaba desabastecimiento en proyectos, vencimiento de medicamentos y dificultad para saber qué botiquín necesitaba reposición",
+        description: "Sistema completo para gestionar botiquines en múltiples proyectos. Controla la entrada de materiales al inventario central, permite la asignación específica de materiales a cada botiquín de proyecto y genera alertas de vencimiento y stock bajo.",
+        technologies: ["Power Apps", "SharePoint", "Power Automate"],
+        impact: "100% de botiquines abastecidos",
         videoUrl: "assets/videos/proyecto3.mp4",
         thumbnailUrl: "assets/images/proyecto3-thumb.jpg",
+        videoOrientation: "landscape",
         features: [
-            "Inventario en tiempo real",
-            "Firma digital del trabajador",
-            "Alertas de vencimiento automáticas",
-            "Historial completo por trabajador",
-            "Generación de actas de entrega"
+            "Control de inventario central de materiales médicos",
+            "Registro de entrada de materiales con lote y vencimiento",
+            "Seguimiento individualizado por proyecto",
+            "Asignación de materiales a botiquines específicos",
+            "Alertas de vencimiento de medicamentos",
+            "Notificaciones de stock bajo por botiquín",
+            "Historial de reposiciones y consumo",
+            "Reportes de cumplimiento normativo"
         ],
         results: [
-            "100% cumplimiento normativo",
-            "0 EPPs vencidos sin reemplazo",
-            "50% reducción en costos de inventario",
-            "Auditorías aprobadas sin observaciones"
+            "100% de botiquines operativos",
+            "0 medicamentos vencidos en botiquines",
+            "60% reducción en desabastecimientos",
+            "Trazabilidad completa de materiales",
+            "Cumplimiento DS 024-2016-EM"
         ]
     },
     {
         id: 4,
-        title: "Capacitaciones y Entrenamiento",
-        problem: "Falta de seguimiento sobre capacitaciones obligatorias y dificultad para demostrar cumplimiento ante auditorías",
-        description: "Plataforma que gestiona el cronograma de capacitaciones, registro de asistencia y evaluaciones. Genera automáticamente certificados y envía recordatorios.",
+        title: "Checklists Digitales de Seguridad",
+        problem: "Los checklists en papel se perdían, no tenían firma verificable y era imposible analizar tendencias o puntos críticos recurrentes en las inspecciones",
+        description: "Aplicación móvil de checklists digitales para diferentes tipos de trabajo de alto riesgo. Incluye checklists personalizados para EPP básico, trabajos en caliente y trabajos en altura. Permite registro fotográfico, firma digital y genera reportes automáticos.",
         technologies: ["Power Apps", "SharePoint", "Power Automate"],
-        impact: "95% asistencia a capacitaciones",
+        impact: "95% cumplimiento en inspecciones",
         videoUrl: "assets/videos/proyecto4.mp4",
         thumbnailUrl: "assets/images/proyecto4-thumb.jpg",
+        videoOrientation: "portrait", // VERTICAL - formato celular
         features: [
-            "Calendario automático de capacitaciones",
-            "QR para registro de asistencia",
-            "Evaluaciones digitales integradas",
-            "Generación automática de certificados",
-            "Reportes de cumplimiento por área"
+            "Checklist de EPP básico obligatorio",
+            "Checklist específico para trabajo en caliente",
+            "Checklist para trabajo en altura certificado",
+            "Registro fotográfico de condiciones",
+            "Firma digital del supervisor y trabajador",
+            "Identificación de condiciones críticas inmediatas",
+            "Notificaciones automáticas de incumplimientos",
+            "Dashboard de análisis de tendencias",
+            "Acceso offline desde dispositivos móviles"
         ],
         results: [
-            "95% de asistencia efectiva",
-            "100% de personal certificado",
-            "80% reducción en tiempo administrativo",
-            "Trazabilidad completa para auditorías"
-        ]
-    },
-    {
-        id: 5,
-        title: "Dashboard de Indicadores SST",
-        problem: "Los indicadores de SST se calculaban manualmente en Excel, generando errores y consumiendo tiempo valioso del equipo",
-        description: "Dashboard interactivo en Power BI que consolida automáticamente todos los indicadores de SST (frecuencia, gravedad, accidentabilidad) desde múltiples fuentes de datos.",
-        technologies: ["Power BI", "Power Automate", "SharePoint"],
-        impact: "Ahorro de 40 horas mensuales",
-        videoUrl: "assets/videos/proyecto5.mp4",
-        thumbnailUrl: "assets/images/proyecto5-thumb.jpg",
-        features: [
-            "Actualización automática de datos",
-            "Indicadores en tiempo real",
-            "Comparativas mensuales/anuales",
-            "Alertas de indicadores críticos",
-            "Acceso desde cualquier dispositivo"
-        ],
-        results: [
-            "40 horas mensuales ahorradas",
-            "0 errores en cálculos",
-            "Decisiones basadas en datos reales",
-            "Presentaciones gerenciales en 5 minutos"
-        ]
-    },
-    {
-        id: 6,
-        title: "Gestión de Permisos de Trabajo",
-        problem: "El proceso de autorización de trabajos de alto riesgo era lento y propenso a omisiones críticas de seguridad",
-        description: "Sistema de permisos de trabajo digital con validaciones automáticas de requisitos de seguridad, aprobaciones en flujo y check de condiciones previas al inicio.",
-        technologies: ["Power Apps", "Power Automate", "SharePoint"],
-        impact: "Tiempo de aprobación reducido 60%",
-        videoUrl: "assets/videos/proyecto6.mp4",
-        thumbnailUrl: "assets/images/proyecto6-thumb.jpg",
-        features: [
-            "Validación automática de requisitos",
-            "Flujo de aprobación multinivel",
-            "Check de seguridad pre-inicio",
-            "Notificaciones push a supervisores",
-            "Historial auditable de permisos"
-        ],
-        results: [
-            "60% reducción en tiempo de aprobación",
-            "100% de requisitos validados",
-            "0 trabajos iniciados sin permiso",
-            "Trazabilidad completa del proceso"
+            "95% de cumplimiento en inspecciones",
+            "100% de trabajos de alto riesgo autorizados",
+            "80% reducción en condiciones inseguras",
+            "Trazabilidad completa de autorizaciones",
+            "0 incidentes por omisión de checklist",
+            "Análisis de puntos críticos recurrentes"
         ]
     }
 ];
@@ -152,7 +126,7 @@ function createProjectCard(project) {
         <div class="project-card" onclick="openProjectModal(${project.id})">
             <div class="project-thumbnail">
                 ${project.videoUrl && project.videoUrl.includes('.mp4') ? 
-                    `<video muted loop playsinline>
+                    `<video muted loop playsinline class="${project.videoOrientation === 'portrait' ? 'video-portrait' : 'video-landscape'}">
                         <source src="${project.videoUrl}" type="video/mp4">
                     </video>` :
                     `<img src="${project.thumbnailUrl}" alt="${project.title}">`
@@ -215,16 +189,20 @@ function openProjectModal(projectId) {
     const modal = document.getElementById('projectModal');
     const modalBody = document.getElementById('modalBody');
     
+    // Determinar la clase de orientación del video
+    const videoClass = project.videoOrientation === 'portrait' ? 'modal-video-portrait' : 'modal-video-landscape';
+    
     modalBody.innerHTML = `
         <div class="modal-project">
             <h2 class="project-modal-title">${project.title}</h2>
             
-            <div class="project-modal-video">
+            <div class="project-modal-video ${videoClass}">
                 ${project.videoUrl && project.videoUrl.includes('.mp4') ? 
-                    `<video controls autoplay style="width: 100%; border-radius: 12px;">
+                    `<video controls autoplay>
                         <source src="${project.videoUrl}" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
                     </video>` :
-                    `<img src="${project.thumbnailUrl}" alt="${project.title}" style="width: 100%; border-radius: 12px;">`
+                    `<img src="${project.thumbnailUrl}" alt="${project.title}">`
                 }
             </div>
             
@@ -236,14 +214,14 @@ function openProjectModal(projectId) {
             
             <div class="project-modal-section">
                 <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">
-                    <i class="fas fa-exclamation-circle"></i> Problema
+                    <i class="fas fa-exclamation-circle"></i> Problema Identificado
                 </h3>
                 <p style="color: var(--text-secondary); line-height: 1.8;">${project.problem}</p>
             </div>
             
             <div class="project-modal-section">
                 <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">
-                    <i class="fas fa-lightbulb"></i> Solución
+                    <i class="fas fa-lightbulb"></i> Solución Implementada
                 </h3>
                 <p style="color: var(--text-secondary); line-height: 1.8;">${project.description}</p>
             </div>
@@ -254,9 +232,9 @@ function openProjectModal(projectId) {
                 </h3>
                 <ul style="list-style: none; padding: 0;">
                     ${project.features.map(feature => 
-                        `<li style="padding: 0.5rem 0; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="fas fa-check-circle" style="color: var(--secondary-color);"></i>
-                            ${feature}
+                        `<li style="padding: 0.5rem 0; color: var(--text-secondary); display: flex; align-items: flex-start; gap: 0.5rem;">
+                            <i class="fas fa-check-circle" style="color: var(--secondary-color); margin-top: 0.25rem; flex-shrink: 0;"></i>
+                            <span>${feature}</span>
                         </li>`
                     ).join('')}
                 </ul>
@@ -264,12 +242,12 @@ function openProjectModal(projectId) {
             
             <div class="project-modal-section">
                 <h3 style="color: var(--primary-color); margin-bottom: 1rem;">
-                    <i class="fas fa-trophy"></i> Resultados
+                    <i class="fas fa-trophy"></i> Resultados e Impacto
                 </h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
                     ${project.results.map(result => 
-                        `<div style="background: var(--bg-secondary); padding: 1rem; border-radius: 8px; text-align: center;">
-                            <p style="color: var(--text-primary); font-weight: 600;">${result}</p>
+                        `<div style="background: var(--bg-secondary); padding: 1.2rem; border-radius: 8px; text-align: center; border-left: 4px solid var(--secondary-color);">
+                            <p style="color: var(--text-primary); font-weight: 600; font-size: 0.95rem;">${result}</p>
                         </div>`
                     ).join('')}
                 </div>
@@ -329,7 +307,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Agregar estilos para el modal de proyecto
+// ========================================
+// Estilos adicionales para videos
+// ========================================
+
 const modalStyles = `
     .project-modal-section {
         margin: 2rem 0;
@@ -357,10 +338,63 @@ const modalStyles = `
         box-shadow: 0 10px 30px var(--shadow-color);
     }
     
+    /* Video horizontal (landscape) - formato estándar */
+    .modal-video-landscape {
+        width: 100%;
+    }
+    
+    .modal-video-landscape video,
+    .modal-video-landscape img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* Video vertical (portrait) - formato celular */
+    .modal-video-portrait {
+        max-width: 400px;
+        margin: 1.5rem auto;
+    }
+    
+    .modal-video-portrait video,
+    .modal-video-portrait img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 12px;
+    }
+    
+    /* Ajuste para videos verticales en cards */
+    .video-portrait {
+        width: auto !important;
+        height: 100% !important;
+        max-width: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .video-landscape {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
     .project-modal-tags {
         display: flex;
         gap: 0.5rem;
         flex-wrap: wrap;
+    }
+    
+    /* Responsive para modal de video vertical */
+    @media (max-width: 768px) {
+        .modal-video-portrait {
+            max-width: 100%;
+        }
+        
+        .project-modal-title {
+            font-size: 1.5rem;
+        }
     }
 `;
 
