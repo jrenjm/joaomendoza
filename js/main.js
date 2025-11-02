@@ -409,7 +409,6 @@ window.addEventListener('scroll', throttle(revealOnScroll, 100));
 
 console.log('%c¡Hola Developer! 👋', 'font-size: 20px; font-weight: bold; color: #2563eb;');
 console.log('%cEste portfolio fue construido con HTML, CSS y JavaScript vanilla.', 'font-size: 14px; color: #64748b;');
-console.log('%c¿Te interesa el código? Visita: github.com/tuusuario', 'font-size: 14px; color: #10b981;');
 
 // ========================================
 // Analytics (descomentar y configurar si usas)
